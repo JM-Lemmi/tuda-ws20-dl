@@ -10,10 +10,10 @@ library(stringr)
 
 #basepath <- ("C:/Users/julian.lemmerich/OneDrive/User Data/Uni/Semester 7/1081-bs RA DL/Corpus/Testcorpus/") #testcorpus
 
-setwd("C:/Users/julian.lemmerich/OneDrive/User Data/Uni/Semester 7/1081-bs RA DL/Corpus/Teilcorpora/1")
-basepath <- ("C:/Users/julian.lemmerich/OneDrive/User Data/Uni/Semester 7/1081-bs RA DL/Corpus/Teilcorpora/1/")
+setwd("C:/Users/julian.lemmerich/OneDrive/User Data/Uni/Semester 7/1081-bs RA DL/Corpus/Teilcorpora/2")
+basepath <- ("C:/Users/julian.lemmerich/OneDrive/User Data/Uni/Semester 7/1081-bs RA DL/Corpus/Teilcorpora/2/")
 
-#for split operation
+for split operation
 
 #setwd("C:/Users/julian.lemmerich/OneDrive/User Data/Uni/Semester 7/1081-bs RA DL/Corpus/Teilcorpora/4")
 #basepath <- ("C:/Users/julian.lemmerich/OneDrive/User Data/Uni/Semester 7/1081-bs RA DL/Corpus/Teilcorpora/4/")
@@ -158,8 +158,6 @@ ans.dataframe <- data.frame(list.combsentiment, list.anssentiment)
 anon.dataframe <- data.frame(list.comansentiment, list.comnasentiment)
 
 write.csv(chap.dataframe, file="chapter_dataframe.csv")
-write.csv(com.dataframe, file="com_dataframe.csv")
-write.csv(ans.dataframe, file="ans_dataframe.csv")
 
 # Stop the clock
 proc.time() - ptm
