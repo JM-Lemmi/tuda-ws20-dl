@@ -6,17 +6,8 @@ library(syuzhet)
 library(readr)
 library(stringr)
 
-#basepath <- ("C:/Users/julian.lemmerich/OneDrive/User Data/Uni/Semester 7/1081-bs RA DL/Corpus/20200930_Gesamtkorpus/")
-
-#basepath <- ("C:/Users/julian.lemmerich/OneDrive/User Data/Uni/Semester 7/1081-bs RA DL/Corpus/Testcorpus/") #testcorpus
-
-setwd("C:/Users/julian.lemmerich/OneDrive/User Data/Uni/Semester 7/1081-bs RA DL/Corpus/Teilcorpora/2")
-basepath <- ("C:/Users/julian.lemmerich/OneDrive/User Data/Uni/Semester 7/1081-bs RA DL/Corpus/Teilcorpora/2/")
-
-for split operation
-
-#setwd("C:/Users/julian.lemmerich/OneDrive/User Data/Uni/Semester 7/1081-bs RA DL/Corpus/Teilcorpora/4")
-#basepath <- ("C:/Users/julian.lemmerich/OneDrive/User Data/Uni/Semester 7/1081-bs RA DL/Corpus/Teilcorpora/4/")
+setwd("C:/Users/julian.lemmerich/OneDrive/User Data/Uni/Semester 7/1081-bs RA DL/Corpus/Teilcorpora/5")
+basepath <- ("C:/Users/julian.lemmerich/OneDrive/User Data/Uni/Semester 7/1081-bs RA DL/Corpus/Teilcorpora/5/")
 
 # Timing the Code
 ptm <- proc.time()
@@ -158,8 +149,8 @@ ans.dataframe <- data.frame(list.combsentiment, list.anssentiment)
 anon.dataframe <- data.frame(list.comansentiment, list.comnasentiment)
 
 write.csv(chap.dataframe, file="chapter_dataframe.csv")
+write.csv(com.dataframe, file="com_dataframe.csv")
+write.csv(ans.dataframe, file="ans_dataframe.csv")
 
 # Stop the clock
 proc.time() - ptm
-
-# TODO console.log for everything, so I know whats going on.
